@@ -119,7 +119,7 @@ function siastatsProcess(contracts, siastatsFarms) {
                     if (siastatsFarms[i].hosts[j].pubkey == contracts[k].hostpublickey.key) {
                         farmList[i].hosts.push({
                             ip: contracts[k].netaddress,
-                            contract: contracts[k].hostpublickey.id,
+                            contract: contracts[k].id,
                             cost: parseFloat((contracts[k].totalcost/1000000000000000000000000).toFixed(2)),
                             data: parseFloat((contracts[k].size/1000000000).toFixed(2)), // In GB
                             pubkey: contracts[k].hostpublickey.key
@@ -225,6 +225,7 @@ function cancelContract(contractNum, contractsToRemove, attempt) {
             if (attempt > 3) {
                 console.log("Error with command. This contract was not canceled (Are you using Sia 1.3.4 or above?): " + contractsToRemove[contractNum].ip)
                 contractNum++
+                attempt = 1
                 cancelContract(contractNum, contractsToRemove, attempt)
             } else { // Retry up to 3 times
                 cancelContract(contractNum, contractsToRemove, attempt)
@@ -237,6 +238,7 @@ function cancelContract(contractNum, contractsToRemove, attempt) {
         if (attempt > 3) {
             console.log("Error connecting to Sia. This contract was not canceled: " + contractsToRemove[contractNum].ip)
             contractNum++
+            attempt = 1
             cancelContract(contractNum, contractsToRemove, attempt)
         } else { // Retry up to 3 times
             cancelContract(contractNum, contractsToRemove, attempt)
