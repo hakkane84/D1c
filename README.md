@@ -19,7 +19,7 @@ After canceling contracts, your Sia client will form replacement contracts with 
 
 These binaries were compiled using `pkg` (https://github.com/zeit/pkg)
 
-![screenshot](https://github.com/hakkane84/D1c/blob/master/screenshot.jpg)
+![screenshot](https://github.com/hakkane84/D1c/blob/master/screenshot.JPG)
 
 ## Usage of the non-compiled script
 
