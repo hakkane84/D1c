@@ -11,8 +11,9 @@ D1c removes contracts with dangerous farms indicated by SiaStats.info, as those 
 
 ## Usage of the binaries:
 
+* Enable the app on your AntiVirus and Firewall
 * Double-click on the binary
-* Confirm you want to remove the listed contracts
+* Confirm you want to remove the listed contracts (press `y`)
 * Done!
 
 After canceling contracts, your Sia client will form replacement contracts with new hosts, as long as your wallet is unlocked. Some time after creating these new contracts (this can be accelerated by restarting Sia), Sia's file repair capabilities will upload the pieces of files to the new hosts. If file redundancy does not start recovering a few minutes after removing contracts, then restart Sia. Keep in mind that the **file repair will incur Siacoin expenses**: new contracts will be formed, data will be uploaded to the replacement hosts and if you don't have the files locally anymore, the files will be downloaded first from the rest of available hosts (incurring download expenses).
