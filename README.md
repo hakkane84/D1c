@@ -9,6 +9,8 @@ Ready-to-use binaries for Windows, MacOS and Linux can be downloaded here: https
 
 D1c removes contracts with dangerous farms indicated by SiaStats.info, as those that have been proved they are attempting a Sybil attack. In case SiaStats is unavailable (for example during to a DDoS attack to its servers), a local copy of this database is used (`siastats_farms_database.json`). This file can be updated manually: ask in the Sia official Discord in case you require an up-to-date database file.
 
+For more granular control over the removed contracts, check the [full version of Decentralizer](https://github.com/hakkane84/Decentralizer)
+
 ## Usage of the binaries:
 
 * Enable the app on your AntiVirus and Firewall
