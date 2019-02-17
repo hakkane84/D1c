@@ -1,7 +1,7 @@
 ![logo](https://github.com/hakkane84/Decentralizer/blob/master/logo.png)
 # D1c (*Decentralizer 1-click*)
 
-**NOTE: This software is deprecated and replaced by Decentralizer-GUI (https://github.com/hakkane84/Decentralizer-GUI/blob/master/README.md), which fits the niche of Sia users with no desire or knowledge on using command line tools**
+**NOTE: This software is deprecated and replaced by Decentralizer-GUI (https://github.com/hakkane84/Decentralizer-GUI), which fits the niche of Sia users with no desire or knowledge on using command line tools**
 
 Website: https://keops.cc/decentralizer
 
