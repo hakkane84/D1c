@@ -1,6 +1,8 @@
 ![logo](https://github.com/hakkane84/Decentralizer/blob/master/logo.png)
 # D1c (*Decentralizer 1-click*)
 
+**NOTE: This software is deprecated and replaced by Decentralizer-GUI (https://github.com/hakkane84/Decentralizer-GUI/blob/master/README.md), which fits the niche of Sia users with no desire or knowledge on using command line tools**
+
 Website: https://keops.cc/decentralizer
 
 Simple tool for Sia renters that detects and eliminates dangerous hosting farms among the contracts list of the renter. These dangerous farms are identified by the [alert system of SiaStats.info](htps://siastats.info/hosting_farms)
